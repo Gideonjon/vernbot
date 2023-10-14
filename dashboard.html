@@ -615,6 +615,14 @@ nav.close ~ .dashboard .top{
                 <h3 class="mb-4 text-xl font-medium text-gray-900 ">Link your Account</h3>
                 <form class="space-y-6" action="#">
                     <div>
+                        <label for="platform" class="block mb-2 text-sm font-medium text-gray-900 ">Server</label>
+                        <select name="platform" id="platform" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
+                            rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                            <option>Metatrader-4</option>
+                            <option>Metatrader-5</option>
+                        </select>
+                    </div>
+                    <div>
                         <label for="brokerage" class="block mb-2 text-sm font-medium text-gray-900 ">Brokerage</label>
                         <select name="brokerage" id="brokerage" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
                             rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
@@ -638,10 +646,24 @@ nav.close ~ .dashboard .top{
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500
                             focus:border-blue-500 block w-full p-2.5 " required>
                     </div>
+                   <div>
+                        <label for="server" class="block mb-2 text-sm font-medium text-gray-900 ">Server</label>
+                        <select name="server" id="server" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
+                            rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                            <option>Exness-MT5Real9</option>
+                            <option>Exness-MT5Real10</option>
+                            <option>Exness-MT5Rea8</option>
+                        </select>
+                    </div>
                     <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Server</label>
-                        <input type="text" name="brokerage" id="brokerage" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
-                            rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Exness-MT5Real9" required>
+                        <label for="server" class="block mb-2 text-sm font-medium text-gray-900 ">Bot Type</label>
+                        <select name="server" id="server" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm 
+                            rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required>
+                            <option>VernBot-Fx 1</option>
+                            <option>VernBot-Fx 2</option>
+                            <option>VerBot-Fx 3</option>
+                        </select>
+                    
                     </div>
                     
                     <div class="flex justify-between">
