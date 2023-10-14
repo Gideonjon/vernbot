@@ -53,11 +53,7 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta http-equiv="Content-Language" content="en_US" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-         @import url(//pro.fontawesome.com/releases/v5.10.0/css/all.css); @import url(//cdn.jsdelivr.net/npm/cryptocoins-icons@2.9.0/webfont/cryptocoins.css); *{font-family: Poppins;}body{background-color: #111827;}.navbar-active .hamburger div:first-child{@apply rotate-45 translate-y-1.5;}.navbar-active .hamburger div:last-child{@apply -rotate-45 -translate-y-1;}.navbar-active div:first-child div:first-child div:last-child{@apply block lg:flex}.logo{color: white; font-size: 2rem;}header span.right-side-header{float: right !important;}header span.right-side-header a{text-decoration: none; color: grey; padding-right: 1rem;}.introduction h1{text-align: center; color: grey;}.introduction h1 i{color: #AA63FF; font-size: 3rem;}.rounded-4xl{border-radius: 3.5rem;}.phone-top{position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 50%; height: 3rem; z-index: 1;}.phone-top-inner{position: relative; height: 2rem; width: 100%; background-color: #fff; border-bottom-left-radius: 1.5rem; border-bottom-right-radius: 1.5rem;}.phone-top-inner:before{content: ""; position: absolute; top: 0; left: -1rem; height: 1rem; width: 1rem; border-top-right-radius: 50%; box-shadow: 0.5rem -0.5rem 0 0 #fff;}.phone-top-inner:after{content: ""; position: absolute; top: 0; right: -1rem; height: 1rem; width: 1rem; border-top-left-radius: 50%; box-shadow: -0.5rem -0.5rem 0 0 #fff;}.invalid-feedback, .empty-feedback{display: none;}.was-validated :placeholder-shown:invalid ~ .empty-feedback{display: block;}.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback{display: block;}.is-invalid, .was-validated :invalid{border-color: #dc3545;}.is-invalid, .was-validated :invalid:focus{--tw-ring-color: rgba(220, 53, 69, 0.2);}
-    </style>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <style>
     :root {
   --white-color: #fff;
@@ -310,86 +306,11 @@ body.dark {
   }
 }
   </style>
-    <script>
-        //codes to check for data caching....
-        //set initial to 0 
-        var status = 0;
-
-        //if the status is really not cached, then enable caching....
-        if(system.CacheStatus == 0){
-            var status = 0;
-            system.cacheStatus(current.UserBrowser_isEnabled);
-        }
-
-        //if the status is already cached, just update the cache incase the site has been updated....
-        else if(system.CacheStatus == 1){
-            var status = 1;
-            system.cacheStatus(current.UserBrowser_isUpdated));
-        }
-
-        //if something is wrong and the input is not correct, give the caching upade to the browser AI
-        else
-        {
-            system.cacheStatus($this->name);
-        }
-    </script>
-  <script>
-    const body = document.querySelector("body");
-const darkLight = document.querySelector("#darkLight");
-const sidebar = document.querySelector(".sidebar");
-const submenuItems = document.querySelectorAll(".submenu_item");
-const sidebarOpen = document.querySelector("#sidebarOpen");
-const sidebarClose = document.querySelector(".collapse_sidebar");
-const sidebarExpand = document.querySelector(".expand_sidebar");
-sidebarOpen.addEventListener("click", () => sidebar.classList.toggle("close"));
-
-sidebarClose.addEventListener("click", () => {
-  sidebar.classList.add("close", "hoverable");
-});
-sidebarExpand.addEventListener("click", () => {
-  sidebar.classList.remove("close", "hoverable");
-});
-
-sidebar.addEventListener("mouseenter", () => {
-  if (sidebar.classList.contains("hoverable")) {
-    sidebar.classList.remove("close");
-  }
-});
-sidebar.addEventListener("mouseleave", () => {
-  if (sidebar.classList.contains("hoverable")) {
-    sidebar.classList.add("close");
-  }
-});
-
-darkLight.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  if (body.classList.contains("dark")) {
-    document.setI
-    darkLight.classList.replace("bx-sun", "bx-moon");
-  } else {
-    darkLight.classList.replace("bx-moon", "bx-sun");
-  }
-});
-
-submenuItems.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("show_submenu");
-    submenuItems.forEach((item2, index2) => {
-      if (index !== index2) {
-        item2.classList.remove("show_submenu");
-      }
-    });
-  });
-});
-
-if (window.innerWidth < 768) {
-  sidebar.classList.add("close");
-} else {
-  sidebar.classList.remove("close");
-}
-  </script>
-
-      <body>
+</head>
+    <body>
+    
+  
+   
         <!-- navbar -->
     <nav class="navbar">
       <div class="logo_item">
@@ -534,5 +455,61 @@ if (window.innerWidth < 768) {
         </div>
       </div>
     </nav>
+        <script>
+    const body = document.querySelector("body");
+const darkLight = document.querySelector("#darkLight");
+const sidebar = document.querySelector(".sidebar");
+const submenuItems = document.querySelectorAll(".submenu_item");
+const sidebarOpen = document.querySelector("#sidebarOpen");
+const sidebarClose = document.querySelector(".collapse_sidebar");
+const sidebarExpand = document.querySelector(".expand_sidebar");
+sidebarOpen.addEventListener("click", () => sidebar.classList.toggle("close"));
+
+sidebarClose.addEventListener("click", () => {
+  sidebar.classList.add("close", "hoverable");
+});
+sidebarExpand.addEventListener("click", () => {
+  sidebar.classList.remove("close", "hoverable");
+});
+
+sidebar.addEventListener("mouseenter", () => {
+  if (sidebar.classList.contains("hoverable")) {
+    sidebar.classList.remove("close");
+  }
+});
+sidebar.addEventListener("mouseleave", () => {
+  if (sidebar.classList.contains("hoverable")) {
+    sidebar.classList.add("close");
+  }
+});
+
+darkLight.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  if (body.classList.contains("dark")) {
+    document.setI
+    darkLight.classList.replace("bx-sun", "bx-moon");
+  } else {
+    darkLight.classList.replace("bx-moon", "bx-sun");
+  }
+});
+
+submenuItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("show_submenu");
+    submenuItems.forEach((item2, index2) => {
+      if (index !== index2) {
+        item2.classList.remove("show_submenu");
+      }
+    });
+  });
+});
+
+if (window.innerWidth < 768) {
+  sidebar.classList.add("close");
+} else {
+  sidebar.classList.remove("close");
+}
+  </script>
+
     <!-- JavaScript -->
       </body>
